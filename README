@@ -1,0 +1,3 @@
+See subfolders for detailed READMEs and LICENSEs
+
+Includes partial redistributions of boost, dtl, rapidxml, and zlib; rapidxml has a few tiny changes to fix a whitespace parsing bug and silence -Weffc++, all other source files are unchanged.

@@ -1,0 +1,25 @@
+<!ELEMENT field    (tutorial)*>
+<!ELEMENT tutorial (pause | up | down | left | right | menu | cancel | confirm |
+                    pgup | pgdown | text | end | window | nop)*>
+<!ELEMENT pause   EMPTY>
+<!ELEMENT up      EMPTY>
+<!ELEMENT down    EMPTY>
+<!ELEMENT left    EMPTY>
+<!ELEMENT right   EMPTY>
+<!ELEMENT menu    EMPTY>
+<!ELEMENT cancel  EMPTY>
+<!ELEMENT confirm EMPTY>
+<!ELEMENT pgup    EMPTY>
+<!ELEMENT pgdown  EMPTY>
+<!ELEMENT text    (#PCDATA)>
+<!ELEMENT end     EMPTY>
+<!ELEMENT window  EMPTY>
+<!ELEMENT nop     EMPTY>
+
+<!ATTLIST tutorial id     CDATA #REQUIRED>
+<!ATTLIST pause    frames CDATA #REQUIRED>
+<!ATTLIST window
+  x CDATA #REQUIRED
+  y CDATA #REQUIRED
+>
+

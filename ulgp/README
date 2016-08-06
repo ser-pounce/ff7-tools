@@ -1,0 +1,50 @@
+ulgp.exe v1.3.2 - an lgp archive tool
+
+Usage:
+
+ulgp source [destination] [pattern]
+
+
+Notes:
+
+If "source" is a file it is assumed to be a .lgp archive for extracting, otherwise it is assumed to be a directory containing the files to add to a new or existing archive.
+
+If "destination" is omitted, it is set to the stem of the lgp file when extracting (i.e. magic.lgp => magic/), or the source directory suffixed with .lgp when creating or updating (i.e. magic/ => magic.lgp).
+
+If a pattern is given, it is used as a (ECMA-style) regex pattern for the files to extract or add.
+
+The simplest way to use ulgp is to drag a .lgp file onto the .exe to extract all files, or a directory to archive all files in the dir, see the examples below for more options.
+
+
+Examples:
+
+Extract all files from C:/Users/luksy/Desktop/magic.lgp to C:/Users/luksy/Desktop/magic/
+  ulgp C:/Users/luksy/Desktop/magic.lgp
+
+Extract all files from C:/Users/luksy/Desktop/magic.lgp to C:/backup/
+  ulgp C:/Users/luksy/Desktop/magic.lgp C:/backup
+
+Extract foo and bar from C:/Users/luksy/Desktop/magic.lgp to C:/backup/
+  ulgp C:/Users/luksy/Desktop/magic.lgp C:/backup "foo|bar"
+
+Extract all files beginning with a from C:/Users/luksy/Desktop/magic.lgp to C:/backup/
+  ulgp C:/Users/luksy/Desktop/magic.lgp C:/backup "a.*"
+
+Add all files in C:/Users/luksy/Desktop/magic/ to C:/Users/luksy/Desktop/magic.lgp
+  ulgp C:/Users/luksy/Desktop/magic
+
+Add all files in C:/Users/luksy/Desktop/magic/ to C:/backup/magic.lgp
+  ulgp C:/Users/luksy/Desktop/magic C:/backup/magic.lgp
+
+Add foo and bar in C:/Users/luksy/Desktop/magic/ to C:/backup/magic.lgp
+  ulgp C:/Users/luksy/Desktop/magic C:/backup/magic.lgp "foo|bar"
+
+
+Credits:
+
+Aali's lgp tools http://forums.qhimm.com/index.php?topic=8641.0
+
+DLPB for testing & support
+
+Everyone who helped out with feedback and suggestions on the Qhimm forums & wiki
+

@@ -1,0 +1,28 @@
+<!ELEMENT world  (string)*>
+<!ELEMENT string (p)+>
+<!ELEMENT p      (#PCDATA | ltab | cloud | barret | tifa | aerith | redxiii |
+                  yuffie | cait | vincent | cid | gray | blue | red | purple |
+                  green | cyan | yellow | white | flash | rainbow)*>
+<!ELEMENT ltab    EMPTY>
+<!ELEMENT cloud   EMPTY>
+<!ELEMENT barret  EMPTY>
+<!ELEMENT tifa    EMPTY>
+<!ELEMENT aerith  EMPTY>
+<!ELEMENT redxiii EMPTY>
+<!ELEMENT yuffie  EMPTY>
+<!ELEMENT cait    EMPTY>
+<!ELEMENT vincent EMPTY>
+<!ELEMENT cid     EMPTY>
+<!ELEMENT gray    EMPTY>
+<!ELEMENT blue    EMPTY>
+<!ELEMENT red     EMPTY>
+<!ELEMENT purple  EMPTY>
+<!ELEMENT green   EMPTY>
+<!ELEMENT cyan    EMPTY>
+<!ELEMENT yellow  EMPTY>
+<!ELEMENT white   EMPTY>
+<!ELEMENT flash   EMPTY>
+<!ELEMENT rainbow EMPTY>
+
+<!ATTLIST string id     CDATA #REQUIRED>
+

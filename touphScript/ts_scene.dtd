@@ -1,0 +1,7 @@
+<!ELEMENT scene (file)*>
+<!ELEMENT file (string)*>
+<!ELEMENT string (#PCDATA)*>
+
+<!ATTLIST file   id CDATA #REQUIRED>
+<!ATTLIST string id CDATA #REQUIRED>
+
